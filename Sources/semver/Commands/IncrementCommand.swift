@@ -1,7 +1,7 @@
 import ArgumentParser
 import SemanticVersioning
 
-extension SemanticVersioningCLI {
+extension Semver {
   struct Increment: ParsableCommand {
     static var configuration = CommandConfiguration(
       commandName: "increment"
