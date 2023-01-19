@@ -4,7 +4,7 @@ import ArgumentParser
 struct SemanticVersioningCLI: ParsableCommand {
   static var configuration = CommandConfiguration(
     commandName: "semver",
-    subcommands: [Up.self]
+    subcommands: [Increment.self]
   )
   
   func run() throws {
