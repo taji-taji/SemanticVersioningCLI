@@ -4,20 +4,20 @@
 import PackageDescription
 
 let package = Package(
-  name: "SemanticVersioningCLI",
+  name: "semver",
   dependencies: [
     .package(url: "https://github.com/apple/swift-argument-parser", from: "1.2.0"),
     .package(url: "https://github.com/taji-taji/SemanticVersioning.git", from: "0.0.1"),
   ],
   targets: [
     .executableTarget(
-      name: "SemanticVersioningCLI",
+      name: "semver",
       dependencies: [
         .product(name: "ArgumentParser", package: "swift-argument-parser"),
         "SemanticVersioning",
       ]),
     .testTarget(
-      name: "SemanticVersioningCLITests",
-      dependencies: ["SemanticVersioningCLI"]),
+      name: "semverTests",
+      dependencies: ["semver"]),
     ]
 )
