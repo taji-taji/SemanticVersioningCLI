@@ -5,6 +5,12 @@ import PackageDescription
 
 let package = Package(
   name: "semver",
+  products: [
+    .executable(name: "semver",
+                targets: [
+                  "semver",
+                ]),
+  ],
   dependencies: [
     .package(url: "https://github.com/apple/swift-argument-parser", from: "1.2.0"),
     .package(url: "https://github.com/taji-taji/SemanticVersioning.git", from: "0.0.1"),
