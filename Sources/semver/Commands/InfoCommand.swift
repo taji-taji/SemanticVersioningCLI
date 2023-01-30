@@ -11,6 +11,9 @@ extension Semver {
     @Argument
     var version: String
     
+    @Option
+    var format: OutputFormat = .plain
+    
     func run() throws {
       do {
         let version = try Version(from: version)
@@ -22,8 +25,16 @@ extension Semver {
         dictionary["nextMajor"] = nextMajor
         dictionary["nextMinor"] = nextMinor
         dictionary["nextPatch"] = nextPatch
-        let jsonData = try JSONSerialization.data(withJSONObject: dictionary)
-        print(String(data: jsonData, encoding: .utf8)!)
+        
+        switch format {
+        case .plain:
+          for key in dictionary.keys.sorted() {
+            print(key, ":", dictionary[key] ?? "")
+          }
+        case .json:
+          let jsonData = try JSONSerialization.data(withJSONObject: dictionary, options: [.sortedKeys])
+          print(String(data: jsonData, encoding: .utf8)!)
+        }
       } catch {
         print(error)
       }
