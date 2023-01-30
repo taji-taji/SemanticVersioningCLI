@@ -9,6 +9,8 @@ struct Semver: ParsableCommand {
       Info.self,
       Gt.self,
       Lt.self,
+      Gte.self,
+      Lte.self,
     ],
     defaultSubcommand: Info.self
   )
