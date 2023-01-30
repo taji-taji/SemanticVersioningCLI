@@ -7,6 +7,7 @@ struct Semver: ParsableCommand {
     subcommands: [
       Increment.self,
       Info.self,
+      Gt.self,
     ],
     defaultSubcommand: Info.self
   )
