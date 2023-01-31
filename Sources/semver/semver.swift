@@ -5,11 +5,11 @@ struct Semver: ParsableCommand {
   static var configuration = CommandConfiguration(
     commandName: "semver",
     subcommands: [
-      Increment.self,
       Info.self,
+      Increment.self,
       Gt.self,
-      Lt.self,
       Gte.self,
+      Lt.self,
       Lte.self,
     ],
     defaultSubcommand: Info.self

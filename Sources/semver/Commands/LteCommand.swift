@@ -4,7 +4,8 @@ import SemanticVersioning
 extension Semver {
   struct Lte: ParsableCommand {
     static var configuration = CommandConfiguration(
-      commandName: "lte"
+      commandName: "lte",
+      abstract: "Compare versions with `<=` opearator."
     )
     
     @OptionGroup

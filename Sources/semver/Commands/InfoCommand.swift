@@ -5,13 +5,14 @@ import SemanticVersioning
 extension Semver {
   struct Info: ParsableCommand {
     static var configuration = CommandConfiguration(
-      commandName: "info"
+      commandName: "info",
+      abstract: "Print version information."
     )
     
-    @Argument
+    @Argument(help: "Target version.")
     var version: String
     
-    @Option
+    @Option(help: "Print format. `plain` or `json` .")
     var format: OutputFormat = .plain
     
     func run() throws {
