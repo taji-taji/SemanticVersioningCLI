@@ -13,10 +13,12 @@ extension Semver {
     
     @Argument(help: "Target version for incremental. ex) `1.0.0`.")
     var version: String
-    
-    func run() throws {
-      let version = try Version(from: version)
-      print(version.increment(versionElement))
-    }
+  }
+}
+
+extension Semver.Increment: PrintableCommand {
+  func executeWithOutput() throws -> Version {
+    let version = try Version(from: version)
+    return version.increment(versionElement)
   }
 }
