@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
   name: "semver",
+  platforms: [
+    .macOS(.v10_13),
+  ],
   products: [
     .executable(name: "semver",
                 targets: [
