@@ -1,0 +1,43 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Colorizer",
+        "repositoryURL": "https://github.com/getGuaka/Colorizer.git",
+        "state": {
+          "branch": null,
+          "revision": "2ccc99bf1715e73c4139e8d40b6e6b30be975586",
+          "version": "0.2.1"
+        }
+      },
+      {
+        "package": "swift-argument-parser",
+        "repositoryURL": "https://github.com/apple/swift-argument-parser.git",
+        "state": {
+          "branch": null,
+          "revision": "4ad606ba5d7673ea60679a61ff867cc1ff8c8e86",
+          "version": "1.2.1"
+        }
+      },
+      {
+        "package": "xcbeautify",
+        "repositoryURL": "https://github.com/tuist/xcbeautify",
+        "state": {
+          "branch": null,
+          "revision": "b578117619ffed44fb879b29e4e9a481143b0b1b",
+          "version": "0.16.0"
+        }
+      },
+      {
+        "package": "XMLCoder",
+        "repositoryURL": "https://github.com/MaxDesiatov/XMLCoder.git",
+        "state": {
+          "branch": null,
+          "revision": "c438dad94f6a243b411b70a4b4bac54595064808",
+          "version": "0.15.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
