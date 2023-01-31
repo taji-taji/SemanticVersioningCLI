@@ -1,23 +1,25 @@
 {
-  "pins" : [
-    {
-      "identity" : "semanticversioning",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/taji-taji/SemanticVersioning.git",
-      "state" : {
-        "revision" : "c38db6d5928578e01a9fb08bbbf161a0afbfb564",
-        "version" : "0.0.2"
+  "object": {
+    "pins": [
+      {
+        "package": "SemanticVersioning",
+        "repositoryURL": "https://github.com/taji-taji/SemanticVersioning.git",
+        "state": {
+          "branch": null,
+          "revision": "c38db6d5928578e01a9fb08bbbf161a0afbfb564",
+          "version": "0.0.2"
+        }
+      },
+      {
+        "package": "swift-argument-parser",
+        "repositoryURL": "https://github.com/apple/swift-argument-parser",
+        "state": {
+          "branch": null,
+          "revision": "4ad606ba5d7673ea60679a61ff867cc1ff8c8e86",
+          "version": "1.2.1"
+        }
       }
-    },
-    {
-      "identity" : "swift-argument-parser",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/apple/swift-argument-parser",
-      "state" : {
-        "revision" : "4ad606ba5d7673ea60679a61ff867cc1ff8c8e86",
-        "version" : "1.2.1"
-      }
-    }
-  ],
-  "version" : 2
+    ]
+  },
+  "version": 1
 }
